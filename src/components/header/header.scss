@@ -1,0 +1,201 @@
+.header {
+  position: relative;
+  background: #f1f3f5;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:after{
+    content: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 88px;
+    border-bottom: 1px solid #DEE4E9;
+  }
+
+  a{
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-bottom-color 0.3s;
+  }
+
+  &__wrapper {
+    padding-top: 35px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__left {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__logo {
+    margin-top: -7px;
+    margin-right: 0;
+    margin-left: -94px;
+    width: 264px;
+    position: relative;
+
+    &:after {
+      background: url(logo_main_01.png) 0 0 no-repeat;
+      width: 100%;
+      background-size: 100%;
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 0;
+      height: 49.05644597004657px;
+
+    }
+  }
+
+  &__wrap-add-logos {
+    position: relative;
+    padding-left: 11px;
+    display: inline-block;
+    width: 230px;
+
+    &:before {
+      background: url(logo_main_separate.png) 0 0 no-repeat;
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: -1px;
+      width: 14px;
+      -webkit-background-size: 100% 100%;
+      background-size: 100%;
+      height: 45px;
+    }
+  }
+
+  &__logo-eksar, &__logo-roseksimbank {
+    &:after {
+      background: url(logo_main_02.png) 0 0 no-repeat;
+      background-size: 100%;
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      width: 151px;
+      height: 23px;
+    }
+  }
+
+  &__logo-eksar {
+    width: 265px;
+    position: absolute;
+  }
+
+  &__logo-roseksimbank{
+    width: 265px;
+    position: absolute;
+
+    &:after{
+      background: url(logo_main_03.png) 0 0 no-repeat;
+      width: 151px;
+      background-size: 100%;
+    }
+  }
+
+  &__phone{
+    margin: 0 62px 0 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: inherit;
+  }
+
+  &__right{
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end
+  }
+
+  &__office{
+    color: #0E76BC;
+    margin-left: 25px;
+    padding-right: 24px;
+    font-size: 14px;
+    font-weight: normal;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin: -10px 0 0 10px;
+      width: 14px;
+      height: 17px;
+      background: url(header_lock.svg) no-repeat 0 0;
+    }
+  }
+
+  &__bottom{
+    margin-top: 32px;
+    height: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 1500px) {
+
+    &__top {
+      margin-left: 0;
+    }
+
+    &__phone{
+      margin-left: 105px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    &__top {
+      margin-right: 0;
+    }
+
+    &__phone{
+      white-space: nowrap;
+    }
+  }
+
+  @media screen and (max-width: 1439px) {
+
+    &__wrapper{
+      width: auto;
+    }
+
+    &__logo{
+      margin-top: -7px;
+      margin-left: 7px;
+
+      &:after {
+        width: 263px;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+
+    &__logo{
+      margin-left: 0;
+    }
+  }
+}

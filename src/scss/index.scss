@@ -1,0 +1,24 @@
+@import "variables.css";
+@import '~normalize.css/normalize.css';
+@import 'reboot';
+
+html{
+  font-size: 14px;
+  height: 100%;
+}
+
+body{
+  background-color: #F1F3F5;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 1024px;
+  font-family: 'Circe', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #14355D;
+  width: 100%;
+  position: relative;
+  font-smoothing: antialiased;
+  height: 100%;
+}

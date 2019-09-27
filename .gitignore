@@ -1,0 +1,10 @@
+/node_modules
+.idea
+.env
+.env.production
+**/.DS_Store
+*.iml
+yarn.lock
+**-lock.json
+/nbproject
+/dist
