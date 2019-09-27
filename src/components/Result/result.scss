@@ -1,0 +1,123 @@
+.result{
+  border-spacing: 0;
+  border: 0;
+  border-collapse: collapse;
+  padding: 0;
+  width: 100%;
+  margin: 22px 20px 20px;
+
+  thead{
+    td {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      font-family: 'Circe', sans-serif;
+      font-size: 11px;
+      line-height: 16px;
+      color: #666666;
+      vertical-align: top;
+      border-bottom: 3px #CCCCCC solid;
+
+      &.name {
+        text-align: left;
+        padding-left: 56px;
+        width: 300px;
+      }
+
+      &.capacity-right {
+        padding-left: 0;
+        padding-right: 40px;
+      }
+
+      &.capacity {
+        text-align: center;
+
+        div{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: stretch;
+          align-items: flex-start;
+
+          span{
+            flex-shrink: 0;
+            flex-grow: 0;
+          }
+
+          .questions{
+            flex-shrink: 0;
+            flex-grow: 0;
+          }
+        }
+      }
+
+      &.alert{
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        div{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: stretch;
+          align-items: flex-start;
+
+          span{
+            flex-shrink: 0;
+            flex-grow: 0;
+          }
+        }
+      }
+    }
+  }
+
+  td{
+
+    &.capacity {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .more{
+    float: left;
+    align-self: flex-start;
+    margin-top: 32px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0;
+    user-select: none;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: nowrap;
+    background: #0E76BC;
+    vertical-align: middle;
+    appearance: none;
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 16px;
+    line-height: 42px;
+    color: #fff;
+  }
+
+  @media (max-width: 1200px){
+    td{
+
+      &.capacity-right {
+        padding-right: 30px;
+      }
+
+      &.capacity {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      &.alert{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
